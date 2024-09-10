@@ -4,13 +4,10 @@ from datetime import datetime, timedelta
 from queue import Queue
 from time import sleep
 from whisper_cpp_python import run
+from config import WHISPER_MODEL
 import wave
 
 import os
-
-WHISPER_MODEL = (
-    "C:\\Users\\keith\\Desktop\\repos\\whisper.cpp\\models\\ggml-base.en.bin"
-)
 
 
 def main():
