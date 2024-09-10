@@ -1,7 +1,8 @@
 import subprocess
+from config import WHISPER_MAIN
 
 def run(model, file):
-    cmd = ["C:\\Users\\keith\\Desktop\\repos\\whisper.cpp\\main.exe"]
+    cmd = [WHISPER_MAIN]
     cmd += ["--model", model]
     cmd += ["--file", file]
     cmd += ["-nt"]
